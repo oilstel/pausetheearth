@@ -1,33 +1,43 @@
 *, ::before, ::after {box-sizing: border-box;}
-body {
+html {
+    font-size: 100%;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
+}
+body {
     margin: 0;
     padding: 0;
 }
-section {
-    padding: 25px;
-    height: min-content;
+h1, h2, h3, h4, p, ul, ol {
+    margin: 0 1rem;
+    padding: 1rem 0;
 }
-.big {
-    font-size: 40px;
-    line-height: 57px;
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
 }
-.medium {
-    font-size: 20px;
-    line-height: 30px;
+h2, p, ul, ol {
+    font-size: 1.5rem;
+    line-height: 2rem; 
 }
-.credit {
-    font-size: 20px;
-    line-height: 30px;
+ul, ol {
+    margin-left: 2.3rem;
 }
-.timestamp {
-    opacity: .5;
+p {
+    font-weight: normal;
 }
 a {
     color: #000;
-    /* text-decoration: none; */
 }
+
+/* layout */
+.tk {
+    opacity: 0.5;
+}
+.section-header {
+    border-bottom: 1px solid #000;
+}
+
 .yellow {
     background: yellow;
 }
