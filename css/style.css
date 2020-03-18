@@ -5,17 +5,17 @@ body {
     margin: 0;
     padding: 0;
 }
-.page {
-    display: grid;
-    grid-template-rows: 1fr min-content;
-    height: 100vh;
-    padding: 30px;
-}
-.pause {
-    font-size: 40px;
-    line-height: 55px;
-    margin-bottom: 1em;
+section {
+    padding: 25px;
     height: min-content;
+}
+.big {
+    font-size: 40px;
+    line-height: 57px;
+}
+.medium {
+    font-size: 20px;
+    line-height: 30px;
 }
 .credit {
     font-size: 20px;
@@ -28,12 +28,14 @@ a {
     color: #000;
     /* text-decoration: none; */
 }
+.yellow {
+    background: yellow;
+}
+.blue {
+    background: #31e22b;
+}
 @media (max-width: 600px) {
-    .page {
-        grid-template-rows: min-content min-content;
-        /* padding: 20px; */
-    }
-    .pause {
+    .big {
         font-size: 20px;
         line-height: 35px;
     }
