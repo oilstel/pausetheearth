@@ -31,8 +31,8 @@ a {
 .yellow {
     background: yellow;
 }
-.blue {
-    background: #31e22b;
+.green, .green a {
+    color: #1a5e18;
 }
 @media (max-width: 600px) {
     .big {
