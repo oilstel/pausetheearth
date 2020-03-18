@@ -1,0 +1,44 @@
+*, ::before, ::after {box-sizing: border-box;}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.page {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    height: 100vh;
+    padding: 30px;
+}
+.pause {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 1em;
+    height: min-content;
+}
+.credit {
+    font-size: 20px;
+    line-height: 30px;
+}
+.timestamp {
+    opacity: .5;
+}
+a {
+    color: #000;
+    /* text-decoration: none; */
+}
+@media (max-width: 600px) {
+    .page {
+        grid-template-rows: min-content min-content;
+        /* padding: 20px; */
+    }
+    .pause {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .credit {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
